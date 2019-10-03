@@ -127,7 +127,7 @@ class App extends React.Component {
     })
   }
   handleZoomOut() {
-    if (this.state.zoom < DEFAULT_ZOOM){
+    if (this.state.zoom < DEFAULT_ZOOM) {
       return this.setState({
         center: DEFAULT_CENTER
       });
@@ -171,7 +171,9 @@ class App extends React.Component {
   render() {
     const { info, loading } = this.state;
     return (
-      <div>
+      <div style={{
+        width: '100%'
+        }}>        
         <AppBar position="static">
           <Toolbar>
             {/* <IconButton edge="start" color="inherit" aria-label="menu">
@@ -182,6 +184,15 @@ class App extends React.Component {
           </Typography>
           </Toolbar>
         </AppBar>
+        <a href="https://github.com/viniciustrindade/mapa"
+          style={{
+            textAlign: 'right',
+            verticalAlign: 'middle'
+          }}>
+          <img height="40px" alt=''
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+          Ver no GitHub
+          </a>
         <Grid container spacing={3} justify='flex-start' alignItems='center' alignContent='center' style={{ margin: 8 }}>
           <Grid item style={{ position: 'relative' }}>
             <Card elevation={0}>
@@ -210,7 +221,7 @@ class App extends React.Component {
                     }}
                   >
                     {({ zoom, x, y }) => (
-                      <div onMouseMove={this.onMouseMove} onMouseLeave={() => this.setState({info: null})}>
+                      <div onMouseMove={this.onMouseMove} onMouseLeave={() => this.setState({ info: null })}>
                         <ComposableMap projection='mercator' width={1024} height={800} style={{ cursor: 'pointer' }} >
                           <ZoomableGroup
                             center={[x, y]}
