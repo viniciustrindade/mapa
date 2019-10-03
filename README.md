@@ -16,6 +16,10 @@ https://shrouded-gorge-63100.herokuapp.com/
 1. TopoJson - padrão usado para armazenar os dados georeferenciados em json file
 
 
+### CRAWLER
+1. Para esse projeto foi usado um crawler para baixar informações da web.
+https://github.com/viniciustrindade/mapa-crawler
+
 ### RUN
 1. npm install
 1. npm start
