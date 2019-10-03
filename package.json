@@ -21,8 +21,7 @@
     "react-simple-maps": "^0.12.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "export PORT=$PORT && npm run build && npx serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
