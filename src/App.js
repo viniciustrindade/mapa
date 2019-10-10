@@ -411,7 +411,7 @@ class App extends React.Component {
                   valueLabelDisplay="auto"
                 />
               </>}
-              <FormHelperText>Be careful</FormHelperText>
+              {/* <FormHelperText>Be careful</FormHelperText> */}
             </FormControl>
           </Grid>
         </Grid>
